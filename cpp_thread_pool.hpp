@@ -57,7 +57,7 @@ namespace mylib {
             return true;
         }
 
-        [[nodiscard]] forceinline bool queue_full() const {
+        [[nodiscard]] inline bool queue_full() const {
             return q.size_approx() >= queue_size_limit;
         }
 
